@@ -1,47 +1,52 @@
-# spotify-data-pipeline
-Contains code for ETL pipeline for Spotify data using Python in Visual Studio Code, AWS Glue for data transformation, Athena for querying, and S3 for storage. This project showcases cloud-native data processing and analytics.
+# Spotify ETL Data Pipeline | Python & AWS
 
-Spotify Data Pipeline
+# Introduction
+End-to-end data pipeline leveraging Python and AWS to extract, transform, and analyze Spotify data with seamless automation and cloud scalability.
 
-This repository contains an end-to-end automated data pipeline designed to extract, transform, and analyze data from the Spotify API. By leveraging AWS cloud services and Python, this project demonstrates efficient data engineering practices to process and analyze streaming data.
+# Architecture
+<img width="1668" alt="ETL Diagram" src="https://github.com/user-attachments/assets/02ba7763-ac51-46ec-8091-7f098dbfcdc5" />
 
-Features
+# Technology Used
+- Python: Programming language
+- AWS Lambda: To automate data extraction and transformation processes.
+- AWS S3: For scalable and organized data storage.
+- AWS Glue: For schema definition and creating analytics tables.
+- AWS Athena: For querying and analyzing transformed data.
+- Jupyter Notebook: For prototyping and demonstrating the pipeline functionality.
+- Visual Studio Code: As the primary development environment.
 
-1. Data Extraction
-Integration with the Spotify API to extract data such as tracks, artists, playlists, and more.
-Automated data extraction deployed on AWS Lambda for serverless execution.
-Configured triggers to schedule regular data extraction automatically.
+# Data Extraction
+- Integration with the Spotify API to extract data such as tracks, artists, playlists, and more.
+- Automated data extraction deployed on AWS Lambda for serverless execution.
+- Configured triggers to schedule regular data extraction automatically.
 
-3. Data Transformation
-Developed a Python function for cleaning and transforming raw data into structured formats.
-Automated the transformation process with AWS Lambda and event-based triggers.
+# Data Transformation
+- Developed a Python function for cleaning and transforming raw data into structured formats.
+- Automated the transformation process with AWS Lambda and event-based triggers.
 
-5. Data Storage
-Properly organized and stored data files in AWS S3 buckets for scalability and reliability.
+# Data Storage
+- Properly organized and stored data files in AWS S3 buckets for scalability and reliability.
 
-7. Analytics and Querying
-Built analytics tables on transformed data files using AWS Glue for schema definition.
-Queried data efficiently with AWS Athena to enable advanced analysis and insights.
-Architecture Diagram
+# Analytics and Querying
+- Built analytics tables on transformed data files using AWS Glue for schema definition.
+- Queried data efficiently with AWS Athena to enable advanced analysis and insights.
 
-Setup and Deployment
+# Setup and Deployment
 
-Clone this repository.
-Configure access to the Spotify API by creating a client ID and client secret.
-Deploy AWS Lambda functions using the provided Python scripts:
-spotify_api_data_extract.py for data extraction.
-spotify_transformation_load_function.py for transformation and loading.
-Set up triggers for Lambda functions using AWS EventBridge.
-Create an S3 bucket and specify the paths for data storage.
-Define tables in AWS Glue and query the data with Athena.
-Files
+- Clone this repository.
+- Configure access to the Spotify API by creating a client ID and client secret.
+- Deploy AWS Lambda functions using the provided Python scripts: spotify_api_data_extract.py for data extraction. spotify_transformation_load_function.py for transformation and loading.
+- Set up triggers for Lambda functions using AWS EventBridge.
+- Create an S3 bucket and specify the paths for data storage.
+- Define tables in AWS Glue and query the data with Athena.
 
-data_extract.ipynb – Notebook for Spotify API integration and initial testing.
-Spotify Data Pipeline Project.ipynb – Full pipeline demonstration in a Jupyter Notebook.
-spotify_api_data_extract.py – Lambda function script for data extraction.
-spotify_transformation_load_function.py – Lambda function script for data transformation and loading.
-Future Enhancements
+# Files
+- data_extract.ipynb – Notebook for Spotify API integration and initial testing.
+- Spotify Data Pipeline Project.ipynb – Full pipeline demonstration in a Jupyter Notebook.
+- spotify_api_data_extract.py – Lambda function script for data extraction.
+- spotify_transformation_load_function.py – Lambda function script for data transformation and loading.
 
-Expand data extraction to include additional Spotify API endpoints.
-Implement real-time data streaming for near-instant analytics.
-Add dashboard visualizations using tools like Tableau or Power BI.
+# Future Enhancements
+- Expand data extraction to include additional Spotify API endpoints.
+- Implement real-time data streaming for near-instant analytics.
+- Add dashboard visualizations using tools like Tableau or Power BI.
